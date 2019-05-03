@@ -27,21 +27,105 @@ html, body {
   color: #FFFFFF;
 }
 
+.main__col1 {
+  display: none;
+}
+
 @media (min-width: 30em) {
-    .main { width: 100%; display: table; table-layout: fixed; }
-    .main__col1, .main__col2, .main__col3 { display: table-cell; }
-    .main__col1 { width: 25%; }
-    .main__col3 { width: 25%; }
+  .main { width: 100%; display: table; table-layout: fixed; }
+  .main__col1, .main__col2, .main__col3 { display: table-cell; }
+  .main__col1 { width: 25%; }
+  .main__col3 { width: 25%; }
 
-    .header { width: 100%; display: table; table-layout: fixed; }
-    .header__col1, .header__col2 { display: table-cell; }
-    .header__col1 { width: 25%; }
+  .header { width: 100%; display: table; table-layout: fixed; }
+  .header__col1, .header__col2 { display: table-cell; }
+  .header__col1 { width: 25%; }
+
+  .quickfeed {
+    padding-right: 2em;
+    vertical-align: top;
+  }
+
+  .specialfeed {
+    padding-left: 2em;
+    vertical-align: top;
+  }
 }
 
-.quickfeed {
-  padding-right: 2em;
+.quickfeed__item {
+  color: #FFFFFF;
+  background-color: #CCCCCC;
+  margin-top: 1em;
+  padding: .5em;
 }
 
-.specialfeed {
-  padding-left: 2em;
+.quickfeed__item:first-child {
+  margin-top: 0;
 }
+
+.generalfeed {
+
+}
+
+.generalfeed__item {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.generalfeed__image {
+  max-width: 100%;
+}
+
+.generalfeed__title {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 1.5em;
+}
+
+.generalfeed__item--tiles {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin-bottom: 2em;
+}
+
+.generalfeed__tile {
+  display: table-cell;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.generalfeed__tile:first-child {
+  padding-left: 0;
+}
+
+.generalfeed__tile:last-child {
+  padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

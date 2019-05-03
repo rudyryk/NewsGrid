@@ -2,10 +2,46 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: #888888;
+}
+
+.vsection {
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.vsection--header {
+  padding-bottom: 1em;
+  background-color: #FFFFEE;
+}
+
+.vsection--main {
   background-color: #EEFFEE;
+  padding-bottom: 3em;
+}
+
+.vsection--footer {
+  padding-bottom: 3em;
+  background-color: #888888;
+  color: #FFFFFF;
 }
 
 @media (min-width: 30em) {
-    .row { width: 100%; display: table; table-layout: fixed; }
-    .col { display: table-cell; }
+    .main { width: 100%; display: table; table-layout: fixed; }
+    .main__col1, .main__col2, .main__col3 { display: table-cell; }
+    .main__col1 { width: 25%; }
+    .main__col3 { width: 25%; }
+
+    .header { width: 100%; display: table; table-layout: fixed; }
+    .header__col1, .header__col2 { display: table-cell; }
+    .header__col1 { width: 25%; }
+}
+
+.quickfeed {
+  padding-right: 2em;
+}
+
+.specialfeed {
+  padding-left: 2em;
 }
